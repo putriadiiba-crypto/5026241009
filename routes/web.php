@@ -16,8 +16,36 @@ Route::get('blog', function () {
 });
 
 Route::get('pert5', function () {
-	return view('pertemuan5');
+	return view('pert5');
 });
 
 Route::get('dosen', [DosenController::class, 'index']);
 Route::get('biodata', [DosenController::class, 'biodata']);
+
+Route::get('/intro', function () {
+    return view('intro');
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/contoh', function () {
+    return view('contoh');
+});
+
+Route::get('/responsive', function () {
+    return view('responsive');
+});
+
+Route::get('/5026241009', function () {
+    return view('5026241009');
+});
+
+Route::get('/pertemuan5', function () {
+    return view('pertemuan5');
+});
+
+Route::get('/linktree', function () {
+    return view('linktree');
+});
