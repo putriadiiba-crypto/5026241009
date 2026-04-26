@@ -49,3 +49,7 @@ Route::get('/pertemuan5', function () {
 Route::get('/linktree', function () {
     return view('linktree');
 });
+
+Route::get('/main', function () {
+    return view('main');
+});

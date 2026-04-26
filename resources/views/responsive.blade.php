@@ -1,118 +1,240 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <title>Latihan Responsive Web</title>
+    <title>Open Recruitment HMSI ITS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <style>
-        .open-sans-judul {
-            font-family: "Open Sans", sans-serif;
-            font-weight: 300;
-            font-style: light;
-            font-size: xx-large;
-            font-variation-settings:
-                "wdth" 100;
-        }
-    </style>
+
+
+<!--BOOTSTRAP-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!--FONT-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color:#eaf2fb;
+    }
+
+    .header-soft{
+        background-color:#dfeaf7;
+    }
+
+    .section{
+        margin-top:40px;
+    }
+
+    .judul-section{
+        font-weight:600;
+        margin-bottom:15px;
+    }
+
+    .box-soft{
+        background:#f2f6fc;
+        padding:25px;
+        border-radius:10px;
+    }
+
+    .testi{
+        background:#f4f7fd;
+        padding:20px;
+        border-radius:10px;
+    }
+
+    .btn-soft{
+        background-color:#5f8fd6;
+        color:white;
+        border:none;
+    }
+
+    .btn-soft:hover{
+        background-color:#4d7dc2;
+    }
+
+</style>
+```
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron text-center">
-            <h1 class="display-3">Selamat Datang</h1>
-            <p class="lead">di Pemrograman Web</p>
-            <hr class="my-2">
-            <p>More info</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Klik Disini</a>
-            </p>
-        </div>
-        <!--latihan grid 1-->
-        <div class="row">
-            <div class="col bg-success">
-                <p>row 1 col 1</p>
-            </div>
-            <div class="col bg-primary">
-                <p>row 1 col 2</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>row 2 col 1</p>
-            </div>
-            <div class="col">
-                <p>row 2 col 2</p>
-            </div>
-        </div>
-        <!--latihan grid 2-->
-        <div class="row">
-            <div class="col-3 border">
-                <p>row 1 col 1</p>
-            </div>
-            <div class="col-9 border">
-                <p>row 1 col 2</p>
-                <div class="row">
-                    <div class="col-7 border">
-                        <p>grid di cel 1, row 1 col 1</p>
-                    </div>
-                    <div class="col-5 border">
-                        <p>grid di cel 2, row 1 col 2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>row 2 col 1</p>
-                </div>
-                <div class="col">
-                    <p>row 2 col 2</p>
-                </div>
-            </div>
-        </div>
-        <!--tentang danantara-->
-        <div class="row">
-            <div class="col">
-                <p>Tentang Kami</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-8">
-                <p class="open-sans-judul"><b>Danantara Indonesia</b> merupakan badan pengelola investasi yang menangani, mengoptimalkan, dan
-                    mengembangkan aset strategis Indonesia, sejalan dengan agenda jangka panjang transformasi ekonomi
-                    nasional.</p>
-            </div>
-            <div class="col-4">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://www.danantaraindonesia.co.id/_next/image?url=https%3A%2F%2Fd19ypesdspgr78.cloudfront.net%2F490%2FHome_Intro_Small_Image.webp&w=1920&q=75"
-                            class="img-fluid">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p></p>
-                        <p>Sebagai badan investasi negara, kami menyediakan platform terpercaya bagi investor global
-                            untuk mengakses potensi ekonomi Indonesia yang sangat luas dan menciptakan nilai tambah yang
-                            berkelanjutan.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p><a href="#">Pelajari lebih lanjut</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<div class="container">
+
+```
+<!--HEADER-->
+<div class="jumbotron text-center header-soft">
+
+    <h1 class="display-4">
+        <b>OPEN RECRUITMENT HMSI ITS</b>
+    </h1>
+
+    <h4>
+        <b>KABINET PILAR AKSI 2026</b>
+    </h4>
+
+    <p>
+        Saatnya kamu berkembang, berkontribusi, dan bertumbuh
+        bersama keluarga besar HMSI ITS.
+    </p>
+
+    <a class="btn btn-soft btn-lg" href="#">Daftar Sekarang</a>
+
+</div>
+
+
+<!--TENTANG HMSI-->
+<div class="row section">
+
+    <div class="col-8">
+
+        <h3 class="judul-section">
+            <b>Tentang HMSI</b>
+        </h3>
+
+        <p>
+            Himpunan Mahasiswa Sistem Informasi (HMSI) merupakan
+            organisasi mahasiswa yang menjadi wadah bagi mahasiswa
+            Sistem Informasi ITS untuk berkembang, berkolaborasi,
+            dan berkontribusi dalam berbagai kegiatan akademik
+            maupun non akademik.
+        </p>
+
+        <p>
+            Melalui berbagai program kerja, HMSI berusaha
+            menciptakan lingkungan yang mendukung mahasiswa
+            untuk mengembangkan soft skill, kepemimpinan,
+            serta relasi yang luas.
+        </p>
+
     </div>
+
+    <div class="col-4">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Logo_ITS.png"
+        class="img-fluid">
+
+    </div>
+
+</div>
+
+
+
+<!--MANFAAT BERGABUNG-->
+<div class="row section">
+
+    <div class="col">
+
+        <h3 class="judul-section">
+            <b>Manfaat Bergabung HMSI</b>
+        </h3>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col box-soft">
+
+        <h5><b>Pengembangan Soft Skill</b></h5>
+
+        <p>
+            Kamu akan belajar komunikasi, teamwork,
+            dan leadership melalui berbagai kegiatan organisasi.
+        </p>
+
+    </div>
+
+    <div class="col box-soft">
+
+        <h5><b>Relasi dan Networking</b></h5>
+
+        <p>
+            Bertemu dengan banyak mahasiswa,
+            senior, dan alumni yang dapat
+            memperluas relasi di masa depan.
+        </p>
+
+    </div>
+
+    <div class="col box-soft">
+
+        <h5><b>Pengalaman Organisasi</b></h5>
+
+        <p>
+            Pengalaman di organisasi membantu
+            kamu memahami manajemen kegiatan,
+            kepemimpinan, dan tanggung jawab.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!--TESTIMONI-->
+<div class="row section">
+
+    <div class="col">
+
+        <h3 class="judul-section">
+            <b>Apa Kata Mereka?</b>
+        </h3>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col testi">
+
+        <p>
+            Bergabung di HMSI membuat saya belajar
+            banyak tentang kepemimpinan dan
+            kerja sama tim. Pengalaman ini
+            sangat berharga selama kuliah.
+        </p>
+
+        <p><b>Abrorus Shobah - Ketua Himpunan Mahasiswa Sistem Informasi ITS 2026</b></p>
+
+    </div>
+
+    <div class="col testi">
+
+        <p>
+            Di HMSI saya mendapatkan banyak
+            teman, pengalaman, dan relasi
+            yang membantu saya berkembang.
+        </p>
+
+        <p><b> Ratu Aulia - Staff Divisi Human Resource Development</b></p>
+
+    </div>
+
+    <div class="col testi">
+
+        <p>
+            Organisasi ini memberi saya kesempatan
+            untuk belajar mengelola kegiatan
+            dan bekerja dalam tim.
+        </p>
+
+        <p><b>Aliaa Putri - Staff Divisi Social Development</b></p>
+
+    </div>
+
+</div>
+
+
+</div>
+
 </body>
 
 </html>
