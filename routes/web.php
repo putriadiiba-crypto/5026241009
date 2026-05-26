@@ -2,21 +2,22 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\PegawaiController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('halo', function () {
-	return "<h1> Halo, Selamat datang</h1> di tutorial laravel www.malasngoding.com";
+    return "<h1> Halo, Selamat datang</h1> di tutorial laravel www.malasngoding.com";
 });
 
 Route::get('blog', function () {
-	return view('blog');
+    return view('blog');
 });
 
 Route::get('pert5', function () {
-	return view('pert5');
+    return view('pert5');
 });
 
 Route::get('dosen', [DosenController::class, 'index']);
@@ -53,3 +54,11 @@ Route::get('/linktree', function () {
 Route::get('/main', function () {
     return view('main');
 });
+
+// Route CRUD Pegawai
+Route::get('/pegawai', [PegawaiController::class, 'index']);
+Route::get('/pegawai/tambah', [PegawaiController::class, 'tambah']);
+Route::post('/pegawai/store', [PegawaiController::class, 'store']);
+Route::get('/pegawai/edit/{id}', [PegawaiController::class, 'edit']);
+Route::post('/pegawai/update', [PegawaiController::class, 'update']);
+Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);

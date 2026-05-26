@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Dimas Ananda D - 5026241113</title>
+    <title>adiibaputri - 5026241009</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-
     <div class="container">
         <div class="mt-4 p-5 bg-primary text-white rounded">
-            <h3>Adiiba Putri H. - 5026241009</h3>
+            <h3>Adiiba Putri Hanifah - 5026241009</h3>
             <h6>@yield('title')</h6>
         </div>
-        <!-- Grey with black text -->
         <nav class="navbar navbar-expand-sm bg-light navbar-light">
             <div class="container-fluid">
                 <ul class="navbar-nav">
@@ -38,11 +34,9 @@
                 </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container mt-3">
             @yield('konten')
         </div>
     </div>
-
 </body>
-
 </html>
