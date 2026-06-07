@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\MobilController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -62,3 +63,11 @@ Route::post('/pegawai/store', [PegawaiController::class, 'store']);
 Route::get('/pegawai/edit/{id}', [PegawaiController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);
+
+// Route CRUD Mobil
+Route::get('/mobil', [MobilController::class, 'index']);
+Route::get('/mobil/tambah', [MobilController::class, 'tambah']);
+Route::post('/mobil/store', [MobilController::class, 'store']);
+Route::get('/mobil/edit/{id}', [MobilController::class, 'edit']);
+Route::post('/mobil/update', [MobilController::class, 'update']);
+Route::get('/mobil/hapus/{id}', [MobilController::class, 'hapus']);
