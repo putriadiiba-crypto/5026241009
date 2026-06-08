@@ -30,6 +30,9 @@
         <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/siswa">Siswa</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="EAS">EAS</a>
       </li>
     </ul>
