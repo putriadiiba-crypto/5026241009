@@ -5,6 +5,9 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\MobilController;
 
+// Controller Nilai Kuliah
+use App\Http\Controllers\NilaiKuliahController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -71,3 +74,11 @@ Route::post('/mobil/store', [MobilController::class, 'store']);
 Route::get('/mobil/edit/{id}', [MobilController::class, 'edit']);
 Route::post('/mobil/update', [MobilController::class, 'update']);
 Route::get('/mobil/hapus/{id}', [MobilController::class, 'hapus']);
+
+// Route CRUD Nilai Kuliah
+Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index']);
+Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah']);
+Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store']);
+Route::get('/nilaikuliah/edit/{id}', [NilaiKuliahController::class, 'edit']);
+Route::post('/nilaikuliah/update', [NilaiKuliahController::class, 'update']);
+Route::get('/nilaikuliah/hapus/{id}', [NilaiKuliahController::class, 'hapus']);
