@@ -24,10 +24,10 @@
         <a class="nav-link" href="/mobil">Mobil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="nilaikuliah">Mahasiswa</a>
+        <a class="nav-link" href="/nilaikuliah">Nilai Mahasiswa</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="PR 3">PR 3</a>
+        <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="EAS">EAS</a>

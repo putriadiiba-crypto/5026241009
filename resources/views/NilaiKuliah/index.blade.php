@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('title', 'Data Mahasiswa')
+@section('title', 'Data Nilai Mahasiswa')
 
 @section('konten')
 

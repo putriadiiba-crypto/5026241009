@@ -8,6 +8,9 @@ use App\Http\Controllers\MobilController;
 // Controller Nilai Kuliah
 use App\Http\Controllers\NilaiKuliahController;
 
+// Controller Keranjang Belanja
+use App\Http\Controllers\KeranjangBelanjaController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -82,3 +85,9 @@ Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'store']);
 Route::get('/nilaikuliah/edit/{id}', [NilaiKuliahController::class, 'edit']);
 Route::post('/nilaikuliah/update', [NilaiKuliahController::class, 'update']);
 Route::get('/nilaikuliah/hapus/{id}', [NilaiKuliahController::class, 'hapus']);
+
+// Route CRUD Keranjang Belanja
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [KeranjangBelanjaController::class, 'store']);
+Route::get('/keranjangbelanja/batal/{id}', [KeranjangBelanjaController::class, 'batal']);
