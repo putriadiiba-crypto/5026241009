@@ -2,7 +2,7 @@
 @section('title', 'Data Siswa')
 @section('konten')
 
-    <h2>Data Siswa</h2>
+    <h2>Data Pelajar</h2>
 
     @if (session('success'))
         <p style="color: green;">{{ session('success') }}</p>
