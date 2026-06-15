@@ -14,6 +14,9 @@ use App\Http\Controllers\KeranjangBelanjaController;
 // Controller Siswa
 use App\Http\Controllers\SiswaController;
 
+//Controller Nilai Peserta
+use App\Http\Controllers\NilaiPesertaController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -102,3 +105,10 @@ Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+//ROUTE CRUD Nilai Peserta
+Route::get('/eas', [NilaiPesertaController::class, 'index']);
+Route::get('/eas/tambah', [NilaiPesertaController::class, 'tambah']);
+Route::post('/eas/store', [NilaiPesertaController::class, 'store']);
+
+
